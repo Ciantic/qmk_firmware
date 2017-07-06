@@ -1,0 +1,19 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
+    "terminal.integrated.confirmOnExit": false,
+    "files.associations": {
+        "quantum_keycodes.h": "c",
+        "keymap_nordic.h": "c",
+        "keycode.h": "c",
+        "default.h": "c",
+        "progmem.h": "c",
+        "common.h": "c",
+        "settings.h": "c",
+        "version_helper.h": "c",
+        "usbportability.h": "c",
+        "config.h": "c",
+        "action_code.h": "c",
+        "version.h": "c"
+    }
+}

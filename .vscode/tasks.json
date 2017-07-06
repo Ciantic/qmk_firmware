@@ -1,0 +1,13 @@
+{
+    "version": "0.1.0",
+    "showOutput": "always",
+    "runner": "terminal",
+    "tasks": [
+        {
+            "isBuildCommand": true,
+            "isShellCommand": true,
+            "taskName": "flash",
+            "command": "\"make ergodox-ciantic-teensy TEENSY_LOADER_CLI=util/wsl_downloaded/teensy_loader_cli.exe\""
+        }
+    ]
+}
