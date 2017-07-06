@@ -115,13 +115,13 @@ dfu: $(BUILD_DIR)/$(TARGET).hex sizeafter
 		echo "Error: Bootloader not found. Trying again in 5s." ;\
 		sleep 5 ;\
 	done
-ifneq (, $(findstring 0.7, $(shell $(DFU_PROGRAMMER) --version 2>&1)))
-	$(DFU_PROGRAMMER) $(MCU) erase --force
-else
-	$(DFU_PROGRAMMER) $(MCU) erase
-endif
-	$(DFU_PROGRAMMER) $(MCU) flash $(BUILD_DIR)/$(TARGET).hex
-	$(DFU_PROGRAMMER) $(MCU) reset
+# ifneq (, $(findstring 0.7, $(shell $(DFU_PROGRAMMER) --version 2>&1)))
+# 	$(DFU_PROGRAMMER) $(MCU) erase --force
+# else
+# 	$(DFU_PROGRAMMER) $(MCU) erase
+# endif
+# 	$(DFU_PROGRAMMER) $(MCU) flash $(BUILD_DIR)/$(TARGET).hex
+# 	$(DFU_PROGRAMMER) $(MCU) reset
 
 dfu-start:
 	$(DFU_PROGRAMMER) $(MCU) reset
