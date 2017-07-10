@@ -3,12 +3,23 @@
 #include "action_layer.h"
 #include "version.h"
 
-
 #include "keymap_german.h"
 
 #include "keymap_nordic.h"
 
+/*
 
+process_tapping notes:
+
+A is a key with LT(3, KC_QUOTE)
+
+When DOWN(A):
+1. Release other keys, meaning send UP(all the other)
+2. Wait for a UP(A) or DOWN(SOMETHING)
+   If UP(A) becomes send KC_QUOTE
+   If DOWN(anything else) send Layer 3's DOWN(SOMETHING)
+
+*/
 
 enum custom_keycodes {
   PLACEHOLDER = SAFE_RANGE, // can always be here
