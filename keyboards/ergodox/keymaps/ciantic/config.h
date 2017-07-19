@@ -7,7 +7,5 @@
 #define TAPPING_TERM 250
 #define PERMISSIVE_HOLD
 
-#define PREVENT_STUCK_MODIFIERS
-
 
 #endif
