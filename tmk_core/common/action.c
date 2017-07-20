@@ -786,7 +786,11 @@ bool is_tap_key(keypos_t key)
                 case 0x00 ... 0xdf:
                 case OP_TAP_TOGGLE:
                 case OP_ONESHOT:
+                #if defined(ONESHOT_TAP_TOGGLE) && ONESHOT_TAP_TOGGLE > 1
                     return true;
+                #else 
+                    return false;
+                #endif
             }
             return false;
         case ACT_SWAP_HANDS:

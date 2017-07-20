@@ -14,11 +14,13 @@ TEST_F(OslTests, OslShouldSwitchLayerImmediately) {
     // OSL(1) DOWN
     press_key(0, 0);
     run_one_scan_loop();
-
-    idle_for(199);
-    EXPECT_EQ(0, layer_state);
-    idle_for(1);
     EXPECT_EQ(2, layer_state);
+
+    // idle_for(9);
+    // idle_for(190);
+    // EXPECT_EQ(0, layer_state);
+    // idle_for(1);
+    // EXPECT_EQ(2, layer_state);
 
     // Layer 1, KC_A down, move this to test below when layers do not leak between tests
     press_key(2, 0);

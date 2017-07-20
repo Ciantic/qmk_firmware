@@ -5,7 +5,7 @@
             "name": "Test Basic",
             "type": "cppdbg",
             "request": "launch",
-            "program": "basic.elf",
+            "program": "test_oslosm.elf",
             "args": [],
             "stopAtEntry": false,
             "cwd": "~/qmk_firmware/.build/test",

@@ -3,7 +3,8 @@
     "tasks": [
         {
             "taskName": "flash",
-            "command": "\"make ergodox-ciantic-teensy TEENSY_LOADER_CLI=util/wsl_downloaded/teensy_loader_cli.exe\""
+            "command": "\"make ergodox-ciantic-teensy TEENSY_LOADER_CLI=util/wsl_downloaded/teensy_loader_cli.exe\"",
+            "problemMatcher": []
         },
         {
             "taskName": "Test basic",

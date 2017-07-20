@@ -20,6 +20,12 @@
         "vusb.c": "cpp",
         "timer.c": "cpp",
         "action_layer.c": "cpp",
-        "xlocale": "c"
+        "xlocale": "c",
+        "action.c": "cpp",
+        "action_tapping.c": "cpp",
+        "wstring.cpp": "c",
+        "iosfwd": "c",
+        "xstring": "c",
+        "xutility": "c"
     }
 }
