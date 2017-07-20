@@ -21,3 +21,6 @@
 #define MATRIX_COLS 10
 
 #endif /* TESTS_BASIC_CONFIG_H_ */
+
+#define ONESHOT_TAP_TOGGLE 0
+// #define ONESHOT_TIMEOUT 500
