@@ -6,12 +6,15 @@ using testing::Return;
 
 class OslTests : public TestFixture {};
 
-
+// OSL Delay bug
 TEST_F(OslTests, OslTesting) {
     TestDriver driver;
+    EXPECT_EQ(0, layer_state);
+
     // OSL(1) DOWN
     press_key(0, 0);
     run_one_scan_loop();
+    EXPECT_EQ((1 <<0) | (1 << 1), layer_state);
 
     // Layer 1, KC_A down
     press_key(2, 0);
@@ -26,4 +29,5 @@ TEST_F(OslTests, OslTesting) {
     release_key(0, 0);
     // EXPECT_CALL(driver, send_keyboard_mock(KeyboardReport()));
     run_one_scan_loop();
+    EXPECT_EQ(1 << 0, layer_state);
 }
