@@ -45,7 +45,7 @@ TEST_F(OslTests, OslTestingUp) {
     release_key(0, 0);
     run_one_scan_loop();
 
-    EXPECT_EQ((1 <<0) | (1 << 1), layer_state);
+    EXPECT_EQ((1 << 1), layer_state);
 
     // Layer 1, KC_A down
     press_key(2, 0);
