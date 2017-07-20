@@ -8,7 +8,7 @@
         {
             "taskName": "Test basic",
             "type": "shell",
-            "command": "\"make OPT=0 test-basic\"",
+            "command": "\"make OPT=0 test-oslosm\"",
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
