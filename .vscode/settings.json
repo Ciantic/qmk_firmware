@@ -11,6 +11,7 @@
         "*.cpp": "cpp",
         "*.hpp": "cpp",
         "keymap.c": "cpp",
-        "matrix.c": "cpp"
+        "matrix.c": "cpp",
+        "keyboard.c": "cpp"
     }
 }
