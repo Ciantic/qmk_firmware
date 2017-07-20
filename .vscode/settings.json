@@ -12,6 +12,12 @@
         "*.hpp": "cpp",
         "keymap.c": "cpp",
         "matrix.c": "cpp",
-        "keyboard.c": "cpp"
+        "keyboard.c": "cpp",
+        "host.c": "cpp",
+        "bluefruit.c": "cpp",
+        "iwrap.c": "cpp",
+        "pjrc.c": "cpp",
+        "vusb.c": "cpp",
+        "timer.c": "cpp"
     }
 }
