@@ -7,7 +7,7 @@ using testing::Return;
 class OslTests : public TestFixture {};
 
 
-TEST_F(KeyPress, OslTesting) {
+TEST_F(OslTests, OslTesting) {
     TestDriver driver;
     press_key(0, 0);
     keyboard_task();

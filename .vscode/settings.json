@@ -9,6 +9,8 @@
         "*.h": "c",
         "*.c": "c",
         "*.cpp": "cpp",
-        "*.hpp": "cpp"
+        "*.hpp": "cpp",
+        "keymap.c": "cpp",
+        "matrix.c": "cpp"
     }
 }
