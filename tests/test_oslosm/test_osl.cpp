@@ -31,3 +31,24 @@ TEST_F(OslTests, OslTesting) {
     run_one_scan_loop();
     EXPECT_EQ(1 << 0, layer_state);
 }
+
+
+// OSL Delay bug (up)
+TEST_F(OslTests, OslTestingUp) {
+    TestDriver driver;
+
+    // OSL(1) DOWN
+    press_key(0, 0);
+    run_one_scan_loop();
+
+    // OSL(1) UP
+    release_key(0, 0);
+    run_one_scan_loop();
+
+    EXPECT_EQ((1 <<0) | (1 << 1), layer_state);
+
+    // Layer 1, KC_A down
+    press_key(2, 0);
+    EXPECT_CALL(driver, send_keyboard_mock(KeyboardReport(KC_A)));
+    run_one_scan_loop();
+}

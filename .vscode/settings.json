@@ -18,6 +18,7 @@
         "iwrap.c": "cpp",
         "pjrc.c": "cpp",
         "vusb.c": "cpp",
-        "timer.c": "cpp"
+        "timer.c": "cpp",
+        "action_layer.c": "cpp"
     }
 }
