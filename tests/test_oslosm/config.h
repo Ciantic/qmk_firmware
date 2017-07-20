@@ -22,7 +22,6 @@
 
 #endif /* TESTS_BASIC_CONFIG_H_ */
 
-
 // #define ONESHOT_TAP_TOGGLE 0
 
 // #define TAPPING_TERM 5

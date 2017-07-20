@@ -26,6 +26,8 @@
         "wstring.cpp": "c",
         "iosfwd": "c",
         "xstring": "c",
-        "xutility": "c"
+        "xutility": "c",
+        "mf_rlefont.c": "cpp",
+        "chrono": "cpp"
     }
 }

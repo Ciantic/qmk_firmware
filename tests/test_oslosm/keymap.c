@@ -30,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         {KC_NO,  KC_NO,  KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,       KC_NO, KC_NO},
     },
     [1] = {
-        // 0    1      2      3        4        5        6       7            8      9
+        // 0      1        2      3        4        5        6       7            8      9
         {KC_TRNS, KC_TRNS, KC_A,  KC_B,   KC_NO,   KC_NO,   KC_NO,  KC_NO,       KC_NO, KC_NO},
         {KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,       KC_NO, KC_NO},
         {KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,       KC_NO, KC_NO},
