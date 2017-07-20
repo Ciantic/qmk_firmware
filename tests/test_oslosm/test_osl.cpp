@@ -4,7 +4,7 @@
 using testing::_;
 using testing::Return;
 
-class KeyPress : public TestFixture {};
+class OslTests : public TestFixture {};
 
 
 TEST_F(KeyPress, OslTesting) {
@@ -15,7 +15,7 @@ TEST_F(KeyPress, OslTesting) {
     press_key(0, 0);
     keyboard_task();
     release_key(0, 0);
-    
+
     EXPECT_CALL(driver, send_keyboard_mock(KeyboardReport(KC_A)));
     keyboard_task();
 }
