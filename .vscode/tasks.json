@@ -3,6 +3,7 @@
     "tasks": [
         {
             "taskName": "flash",
+            "type": "shell",
             "command": "\"make ergodox-ciantic-teensy TEENSY_LOADER_CLI=util/wsl_downloaded/teensy_loader_cli.exe\"",
             "problemMatcher": []
         },
