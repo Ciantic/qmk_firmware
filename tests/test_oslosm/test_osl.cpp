@@ -6,6 +6,20 @@ using testing::Return;
 
 class OslTests : public TestFixture {};
 
+/*
+fredizzimo @fredizzimo 15:09
+I think one shots should always work like this.
+1. Key down always activate layer or modifier immediately
+  * Unless it's already locked, then unlock, and don't process key up
+2. Key up, don't do anything, start ONESHOT_TIMEOUT
+  * Unless another key already was pressed
+3. Key down again, add tap count, but only if the key is transparent on the target layer in case of OSM
+  * If the tap count is big enough, then lock modifier or layer
+4. Another key down process it, return to the previous layer, or disable the modifier
+  * Unless it's another oneshot modifier, then add the modifer to the previous one
+5.If ONESHOT_TIMEOUT then disable the layer or modifier
+*/
+
 // // OSL switches layer, but only after 200ms the tapping term
 // // This is unwanted behavior if tap toggling is not turned ons
 // TEST_F(OslTests, OslShouldSwitchLayerAfterTappingTerm) {
