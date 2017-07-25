@@ -66,7 +66,7 @@ TEST_F(OslTests, OslDownUpThenKey) {
     run_one_scan_loop();
 
     EXPECT_EQ(2, layer_state); // It has now changed
-    run_one_scan_loop();
+    // run_one_scan_loop();
 
     // Layer 1, KC_A down
     press_key(2, 0);
