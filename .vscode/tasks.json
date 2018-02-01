@@ -4,13 +4,21 @@
         {
             "taskName": "flash",
             "type": "shell",
-            "command": "\"make ergodox-ciantic-teensy TEENSY_LOADER_CLI=util/wsl_downloaded/teensy_loader_cli.exe\"",
+            "command": "bash",
+            "args": [
+                "-c",
+                "\"make ergodox-ciantic-teensy TEENSY_LOADER_CLI=util/wsl_downloaded/teensy_loader_cli.exe\"",
+            ],
             "problemMatcher": []
         },
         {
             "taskName": "Test basic",
             "type": "shell",
-            "command": "\"make OPT=0 test-oslosm\"",
+            "command": "bash",
+            "args": [
+                "-c",
+                "\"make OPT=0 test-oslosm\"",
+            ],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
